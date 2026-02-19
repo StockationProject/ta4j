@@ -23,6 +23,7 @@ import org.ta4j.core.criteria.pnl.NetProfitLossCriterion;
 import org.ta4j.core.criteria.pnl.NetReturnCriterion;
 import org.ta4j.core.indicators.averages.SMAIndicator;
 import org.ta4j.core.indicators.helpers.ClosePriceIndicator;
+import org.ta4j.core.indicators.volume.VWAPIndicator;
 import org.ta4j.core.num.Num;
 import org.ta4j.core.rules.CrossedDownIndicatorRule;
 import org.ta4j.core.rules.CrossedUpIndicatorRule;
@@ -73,8 +74,9 @@ public class Quickstart {
         // Step 2: Create indicators
         System.out.println("[2/6] Creating technical indicators...");
         ClosePriceIndicator closePrice = new ClosePriceIndicator(series);
-        SMAIndicator shortSma = new SMAIndicator(closePrice, 50); // 50-period SMA
-        SMAIndicator longSma = new SMAIndicator(closePrice, 200); // 200-period SMA
+        SMAIndicator shortSma = new SMAIndicator(closePrice, 20); // 50-period SMA
+        SMAIndicator longSma = new SMAIndicator(closePrice, 120); // 200-period SMA
+        VWAPIndicator vwapIndicator = new VWAPIndicator(series, 20); // 20-period VWAP
         System.out.println("   [OK] Created 50-period and 200-period Simple Moving Averages");
         System.out.println();
 
@@ -142,6 +144,7 @@ public class Quickstart {
                         .withTradingRecordOverlay(tradingRecord) // Trading positions in subchart
                         .withIndicatorOverlay(shortSma) // Fast SMA overlay
                         .withIndicatorOverlay(longSma) // Slow SMA overlay
+                        .withIndicatorOverlay(vwapIndicator) // VWAP overlay
                         .withSubChart(new NetProfitLossCriterion(), tradingRecord) // Net profit/loss in subchart
                         .toChart();
 

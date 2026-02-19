@@ -1,4 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.ta4j</groupId>
@@ -6,12 +10,9 @@
         <version>0.22.3-SNAPSHOT</version>
     </parent>
     <artifactId>ta4j-examples</artifactId>
-
     <name>Ta4j Examples</name>
     <description>Provides examples that demonstrate how to use ta4j</description>
-
     <dependencies>
-
         <!-- Test dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -45,22 +46,18 @@
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.jfree</groupId>
             <artifactId>jfreechart</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -78,10 +75,10 @@
             <artifactId>log4j-slf4j2-impl</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
-            <!-- Override parent: header/config live in parent dir (avoids CWD dependency when building from workspace root) -->
+            <!-- Override parent: header/config live in parent dir (avoids CWD dependency when
+            building from workspace root) -->
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
@@ -113,5 +110,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

@@ -111,6 +111,56 @@ public class NaN implements Num {
             }
 
             @Override
+            public Num four() {
+                return NaN;
+            }
+
+            @Override
+            public Num ten() {
+                return NaN;
+            }
+
+            @Override
+            public Num twenty() {
+                return NaN;
+            }
+
+            @Override
+            public Num thirty() {
+                return NaN;
+            }
+
+            @Override
+            public Num forty() {
+                return NaN;
+            }
+
+            @Override
+            public Num fifty() {
+                return NaN;
+            }
+
+            @Override
+            public Num sixty() {
+                return NaN;
+            }
+
+            @Override
+            public Num seventy() {
+                return NaN;
+            }
+
+            @Override
+            public Num eighty() {
+                return NaN;
+            }
+
+            @Override
+            public Num ninety() {
+                return NaN;
+            }
+
+            @Override
             public Num hundred() {
                 return NaN;
             }

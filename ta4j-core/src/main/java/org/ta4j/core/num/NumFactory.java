@@ -32,6 +32,53 @@ public interface NumFactory extends Serializable {
      */
     Num three();
 
+    Num four();
+
+    /**
+     * @return the Num of 10
+     */
+    Num ten();
+
+    /**
+     * @return the Num of 20
+     */
+    Num twenty();
+
+    /**
+     * @return the Num of 30
+     */
+    Num thirty();
+
+    /**
+     * @return the Num of 40
+     */
+    Num forty();
+
+    /**
+     * @return the Num of 50
+     */
+    Num fifty();
+
+    /**
+     * @return the Num of 60
+     */
+    Num sixty();
+
+    /**
+     * @return the Num of 70
+     */
+    Num seventy();
+
+    /**
+     * @return the Num of 80
+     */
+    Num eighty();
+
+    /**
+     * @return the Num of 90
+     */
+    Num ninety();
+
     /**
      * @return the Num of 100
      */

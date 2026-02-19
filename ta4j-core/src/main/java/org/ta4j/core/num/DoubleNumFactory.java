@@ -47,6 +47,56 @@ public class DoubleNumFactory implements NumFactory {
     }
 
     @Override
+    public Num four() {
+        return DoubleNum.valueOf(4);
+    }
+
+    @Override
+    public Num ten() {
+        return DoubleNum.valueOf(10);
+    }
+
+    @Override
+    public Num twenty() {
+        return DoubleNum.valueOf(20);
+    }
+ 
+    @Override
+    public Num thirty() {
+        return DoubleNum.valueOf(30);
+    }
+
+    @Override
+    public Num forty() {
+        return DoubleNum.valueOf(40);
+    }
+
+    @Override
+    public Num fifty() {
+        return DoubleNum.valueOf(50);
+    }
+
+    @Override
+    public Num sixty() {
+        return DoubleNum.valueOf(60);
+    }
+
+    @Override
+    public Num seventy() {
+        return DoubleNum.valueOf(70);
+    }
+
+    @Override
+    public Num eighty() {
+        return DoubleNum.valueOf(80);
+    }
+
+    @Override
+    public Num ninety() {
+        return DoubleNum.valueOf(90);
+    }
+
+    @Override
     public Num numOf(final Number number) {
         return DoubleNum.valueOf(number);
     }
